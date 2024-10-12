@@ -1,1 +1,12 @@
-.footer {display: none !important;}
+.footer,
+#footer,
+[class*="footer"],
+[id*="footer"],
+footer {
+    display: none !important;
+}
+
+/* Hide any elements at the bottom of the page that might be acting as a footer */
+body > *:last-child {
+    display: none !important;
+}
